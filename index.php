@@ -31,8 +31,15 @@ if( $inbox) {
 -->
 
 <h2> MENU </h2>
-<form action="personal.php">
+<form action="personal.php?id=">
+  <input type=text placeholder="190323323" name="id">
   <input type=submit  value="info personal">
+</form>
+
+<form action="personal.php?id=">
+<input type="text" id="rut" name="id" required oninput="checkRut(this)" placeholder="Ingrese RUT">
+<button type="submit">Validar RUT y Enviar Form</button>
+<script src="validarRUT.js"></script>
 </form>
 
 <form action="global.php">
