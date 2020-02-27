@@ -38,33 +38,33 @@
 
     <h2 align="center">Solicitudes en proceso:</h2>
     <div id="container">
-      <div align="center" id="pos1">S-ID <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Sid = 'B'"); ?></div>
-      <div align="center" id="pos1">T.I.B.A <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Tiba = 'B'"); ?></div>
-      <div align="center" id="pos1">Alta de Usuario <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Altausuario = 'B'"); ?></div>
-      <div align="center" id="pos1">VPN <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Vpn = 'B'"); ?></div>
-      <div align="center" id="pos1">Attlasian <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Attlasian = 'B'"); ?></div>
+      <div align="center" id="pos1">S-ID <hr><?php Estado("SELECT usuario.Nombre, usuario.Apellido, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Sid = 'B'"); ?></div>
+      <div align="center" id="pos1">T.I.B.A <hr><?php Estado("SELECT usuario.Nombre, usuario.Apellido,usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Tiba = 'B'"); ?></div>
+      <div align="center" id="pos1">Alta de Usuario <hr><?php Estado("SELECT usuario.Nombre,usuario.Apellido, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Altausuario = 'B'"); ?></div>
+      <div align="center" id="pos1">VPN <hr><?php Estado("SELECT usuario.Nombre, usuario.Apellido,usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Vpn = 'B'"); ?></div>
+      <div align="center" id="pos1">Attlasian <hr><?php Estado("SELECT usuario.Nombre,usuario.Apellido, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Attlasian = 'B'"); ?></div>
     </div>
 
     <br><br><br><br>
 
     <h2 align="center">Solicitudes sin empezar:</h2>
     <div id="container" >
-      <div align="center" id="pos1">S-ID <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Sid = 'A'"); ?></div>
-      <div align="center" id="pos1">T.I.B.A <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Tiba = 'A'"); ?></div>
-      <div align="center" id="pos1">Alta de Usuario <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Altausuario = 'A'"); ?></div>
-      <div align="center" id="pos1">VPN <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Vpn = 'A'"); ?></div>
-      <div align="center" id="pos1">Attlasian <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Attlasian = 'A'"); ?></div>
+      <div align="center" id="pos1">S-ID <hr><?php Estado("SELECT usuario.Nombre,usuario.Apellido, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Sid = 'A'"); ?></div>
+      <div align="center" id="pos1">T.I.B.A <hr><?php Estado("SELECT usuario.Nombre,usuario.Apellido, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Tiba = 'A'"); ?></div>
+      <div align="center" id="pos1">Alta de Usuario <hr><?php Estado("SELECT usuario.Nombre,usuario.Apellido, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Altausuario = 'A'"); ?></div>
+      <div align="center" id="pos1">VPN <hr><?php Estado("SELECT usuario.Nombre,usuario.Apellido, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Vpn = 'A'"); ?></div>
+      <div align="center" id="pos1">Attlasian <hr><?php Estado("SELECT usuario.Nombre,usuario.Apellido, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Attlasian = 'A'"); ?></div>
     </div>
 
     <br><br><br><br>
 
     <h2 align="center">Solicitudes terminadas:</h2>
     <div id="container" >
-      <div align="center" id="pos1">S-ID <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Sid = 'C'"); ?></div>
-      <div align="center" id="pos1">T.I.B.A <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Tiba = 'C'"); ?></div>
-      <div align="center" id="pos1">Alta de Usuario <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Altausuario = 'C'"); ?></div>
-      <div align="center" id="pos1">VPN <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Vpn = 'C'"); ?></div>
-      <div align="center" id="pos1">Attlasian <hr><?php Estado("SELECT usuario.Nombre, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Attlasian = 'C'"); ?></div>
+      <div align="center" id="pos1">S-ID <hr><?php Estado("SELECT usuario.Nombre,usuario.Apellido, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Sid = 'C'"); ?></div>
+      <div align="center" id="pos1">T.I.B.A <hr><?php Estado("SELECT usuario.Nombre,usuario.Apellido, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Tiba = 'C'"); ?></div>
+      <div align="center" id="pos1">Alta de Usuario <hr><?php Estado("SELECT usuario.Nombre,usuario.Apellido, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Altausuario = 'C'"); ?></div>
+      <div align="center" id="pos1">VPN <hr><?php Estado("SELECT usuario.Nombre, usuario.Apellido,usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Vpn = 'C'"); ?></div>
+      <div align="center" id="pos1">Attlasian <hr><?php Estado("SELECT usuario.Nombre,usuario.Apellido, usuario.Rut FROM usuario,solicitud WHERE usuario.Rut = solicitud.Rut AND solicitud.Attlasian = 'C'"); ?></div>
     </div>
 
   </body>

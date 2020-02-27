@@ -1,5 +1,6 @@
 <?php
 
+
 $mysqli = new mysqli('localhost', 'root', 'root', 'testpractica');
 $resultado = $mysqli->query("SELECT contadortop FROM contadormail");
 $num_fila = $resultado->num_rows - 1;
@@ -63,21 +64,19 @@ if ($inbox) {
 
         $rut_encontrado = $obtener_rut->fetch_assoc();
         echo $rut_encontrado['Rut'];
+        $data = $rut_encontrado['Rut'];
 
-        $sql = "UPDATE altausuario SET sp1='B' WHERE Rut = 110001112";
+        $sql = "UPDATE altausuario SET sp1='B' WHERE Rut = '$data'";
         $mysqli->query($sql);
 
-        $sql = "UPDATE solicitud SET Altausuario ='B' WHERE Rut = 110001112";
+        $sql = "UPDATE solicitud SET Altausuario ='B' WHERE Rut = '$data'";
         $mysqli->query($sql);
       }
-
-
 
     }
       //IF ( COASIN SOLICITUD TIBA ){}
       //IF ( COASIN SOLICITUD ETC ){}
       //IF ( COASIN SOLICITUD ETC ){}
-
 
     }
 

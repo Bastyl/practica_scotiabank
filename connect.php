@@ -6,12 +6,12 @@ function Conexionbdd(){
     echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
   }
 
-  $resultado = $mysqli->query("SELECT Nombre, Rut FROM usuario");
+  $resultado = $mysqli->query("SELECT Nombre, Rut, Apellido FROM usuario");
 
   for ($num_fila = $resultado->num_rows - 1; $num_fila >= 0; $num_fila--) {
     $resultado->data_seek($num_fila);
     $fila = $resultado->fetch_assoc();
-    ?><p><a href=<?php echo "personal.php?id=".$fila['Rut'];?>><?php echo $fila['Nombre']." " ; echo $fila['Rut']; ?></a><p><?php
+    ?><p><a href=<?php echo "personal.php?id=".$fila['Rut'];?>><?php echo $fila['Nombre']." " ; echo $fila['Apellido']; echo " ".$fila['Rut'];?></a><p><?php
   }
   $resultado->free();
   $mysqli->close();
@@ -29,7 +29,7 @@ function Estado($value){
     $resultado->data_seek($num_fila);
     $fila = $resultado->fetch_assoc();
     ?>
-    <p><a href=<?php echo "personal.php?id=".$fila['Rut'];?>><?php echo $fila['Nombre']." " ; echo $fila['Rut']; ?></a><p><?php
+    <p><a href=<?php echo "personal.php?id=".$fila['Rut'];?>><?php echo $fila['Nombre']." ".$fila['Apellido']." " ; echo $fila['Rut']; ?></a><p><?php
   }
   $resultado->free();
   $mysqli->close();

@@ -8,7 +8,6 @@
 <body>
 
 
-
   <div>
     <div style="width:100%; height:100; background:#ED111D;"><IMG SRC="scotia.png" align= "right" ALT="some text" WIDTH=100 HEIGHT=100></div>
 
